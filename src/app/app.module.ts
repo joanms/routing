@@ -26,7 +26,7 @@ const appRoutes: Routes = [
   { path: 'not-found', component: PageNotFoundComponent },
   // This route redirects all routes not listed above to the not found page.
   // It must always be the last route in the list, otherwise users will always be redirected to 'not found'
-  { path: '**', redirectTo: '/not-found' }
+  { path: '**', redirectTo: '/not-found', pathMatch: 'full' }
 ];
 
 @NgModule({
